@@ -1,23 +1,25 @@
 /**
- * µ¼Ê¦ÀàÓĞÈçÏÂÊôĞÔ£º
- * address »î¶¯µØÖ·£ºString
- * checkinNo Ç©µ½ÈËÊı£ºint
- * credits »î¶¯»ı·Ö²ÎÓë»î¶¯µÄÈË»ñµÃµÄ»ı·Ö£ºint
- * description »î¶¯ÃèÊö£ºString
- * durationTime »î¶¯½øĞĞÊ±¼ä£ºfloat
- * isApply ÊÇ·ñÔÊĞí±¨Ãû£ºBoolean
- * pubTime 	·¢²¼Ê±¼ä£ºDate
- * grabTime ÇÀµ¥Ê±¼ä£ºDate
- * holdTime ¾Ù°ìÊ±¼ä£ºDate
- * id »î¶¯ÀàĞÍ£ºint
- * limits »î¶¯ÈËÊıÏŞÖÆ£ºint
- * lname µ¼Ê¦ĞÕÃû£ºString
- * name »î¶¯ĞÕÃû£ºString
- * oid »î¶¯×éÖ¯Õß£ºid
- * oname »î¶¯×éÖ¯ÕßµÄÃû×Ö£ºString
+ * æ´»åŠ¨ç±»æœ‰å¦‚ä¸‹å±æ€§ï¼š
+ * address æ´»åŠ¨åœ°å€ï¼šString
+ * checkinNo ç­¾åˆ°äººæ•°ï¼šint
+ * credits æ´»åŠ¨ç§¯åˆ†å‚ä¸æ´»åŠ¨çš„äººè·å¾—çš„ç§¯åˆ†ï¼šint
+ * description æ´»åŠ¨æè¿°ï¼šString
+ * durationTime æ´»åŠ¨è¿›è¡Œæ—¶é—´ï¼šfloat
+ * isApply æ˜¯å¦å…è®¸æŠ¥åï¼šBoolean
+ * pubTime 	å‘å¸ƒæ—¶é—´ï¼šDate
+ * grabTime æŠ¢å•æ—¶é—´ï¼šDate
+ * holdTime ä¸¾åŠæ—¶é—´ï¼šDate
+ * id æ´»åŠ¨ç±»å‹ï¼šint
+ * limits æ´»åŠ¨äººæ•°é™åˆ¶ï¼šint
+ * lname å¯¼å¸ˆå§“åï¼šString
+ * name æ´»åŠ¨å§“åï¼šString
+ * oid æ´»åŠ¨ç»„ç»‡è€…ï¼šid
+ * oname æ´»åŠ¨ç»„ç»‡è€…çš„åå­—ï¼šString
+ * state æ´»åŠ¨çŠ¶æ€ï¼šint
  * @author hxq
  * @version 1.0
  * @created 17-5-2019 14:32:10
+ * ä¿®æ”¹æ´»åŠ¨
  */
 import java.util.Date;
 public class Activity {
@@ -38,251 +40,251 @@ public class Activity {
 	private String oname;
 	private Date pubTime;
 	/**
-	 * state:0 Î´ÉóºË
-	 * state:1 ÒÑÉóºË
-	 * state:2 ÇÀµ¥ÖĞ
-	 * state:3 ÒÑÇÀµ¥
-	 * state:4 ±¨ÃûÖĞ
-	 * state:5 ¾Ù°ìÖĞ
-	 * state:6 ÒÑ½áÊø
+	 * state:0 æœªå®¡æ ¸
+	 * state:1 å·²å®¡æ ¸
+	 * state:2 æŠ¢å•ä¸­
+	 * state:3 å·²æŠ¢å•
+	 * state:4 æŠ¥åä¸­
+	 * state:5 ä¸¾åŠä¸­
+	 * state:6 å·²ç»“æŸ
 	 */
 	private int state;
 	/**
-	 * »ñµÃ»î¶¯×´Ì¬
-	 * @return state »î¶¯×´Ì¬
+	 * è·å¾—æ´»åŠ¨çŠ¶æ€
+	 * @return state æ´»åŠ¨çŠ¶æ€
 	 */
 	public int getState() {
 		return state;
 	}
 	/**
-	 * ÉèÖÃ»î¶¯×´Ì¬0£¬1£¬2£¬3£¬4£¬5£¬6
-	 * @param state »î¶¯×´Ì¬
+	 * è®¾ç½®æ´»åŠ¨çŠ¶æ€0ï¼Œ1ï¼Œ2ï¼Œ3ï¼Œ4ï¼Œ5ï¼Œ6
+	 * @param state æ´»åŠ¨çŠ¶æ€
 	 */
 	public void setState(int state) {
 		this.state = state;
 	}
 	/**
-	 * »ñÈ¡»î¶¯µØÖ·
-	 * @return address »î¶¯µØÖ·
+	 * è·å–æ´»åŠ¨åœ°å€
+	 * @return address æ´»åŠ¨åœ°å€
 	 */
     public String getAddress() {
         return address;
     }
     /**
-     * ÉèÖÃ»î¶¯µØÖ·
-     * @param address »î¶¯µØÖ·
+     * è®¾ç½®æ´»åŠ¨åœ°å€
+     * @param address æ´»åŠ¨åœ°å€
      */
 
     public void setAddress(String address) {
         this.address = address;
     }
     /**
-     * »ñÈ¡Ç©µ½ÈËÊı
-     * @return checkinNo Ç©µ½ÈËÊı
+     * è·å–ç­¾åˆ°äººæ•°
+     * @return checkinNo ç­¾åˆ°äººæ•°
      */
 
     public int getCheckinNo() {
         return checkinNo;
     }
     /**
-     * ÉèÖÃÇ©µ½ÈËÊı
-     * @param checkinNo Ç©µ½ÈËÊı
+     * è®¾ç½®ç­¾åˆ°äººæ•°
+     * @param checkinNo ç­¾åˆ°äººæ•°
      */
     public void setCheckinNo(int checkinNo) {
         this.checkinNo = checkinNo;
     }
     /**
-     * »ñÈ¡»î¶¯»ı·Ö
-     * @return credits »î¶¯»ı·Ö
+     * è·å–æ´»åŠ¨ç§¯åˆ†
+     * @return credits æ´»åŠ¨ç§¯åˆ†
      */
     public int getCredits() {
         return credits;
     }
     /**
-     * ÉèÖÃ»î¶¯»ı·Ö
+     * è®¾ç½®æ´»åŠ¨ç§¯åˆ†
      * @param credits
      */
     public void setCredits(int credits) {
         this.credits = credits;
     }
     /**
-     * »ñÈ¡»î¶¯ÃèÊö
-     * @return description ÃèÊö
+     * è·å–æ´»åŠ¨æè¿°
+     * @return description æè¿°
      */
     public String getDescription() {
         return description;
     }
     /**
-     * ÉèÖÃ»î¶¯ÃèÊö
-     * @param description »î¶¯ÃèÊö
+     * è®¾ç½®æ´»åŠ¨æè¿°
+     * @param description æ´»åŠ¨æè¿°
      */
     public void setDescription(String description) {
         this.description = description;
     }
     /**
-     * »ñÈ¡»î¶¯½øĞĞÊ±¼ä
-     * @return durationTime ½øĞĞ
+     * è·å–æ´»åŠ¨è¿›è¡Œæ—¶é—´
+     * @return durationTime è¿›è¡Œ
      */
     public float getDurationTime() {
         return durationTime;
     }
     /**
-     * ÉèÖÃ»î¶¯Ê±¼ä
+     * è®¾ç½®æ´»åŠ¨æ—¶é—´
      * @param durationTime 
      */
     public void setDurationTime(float durationTime) {
         this.durationTime = durationTime;
     }
     /**
-     * »ñµÃµ¼Ê¦ÇÀµ¥Ê±¼ä
-     * @return grabTime µ¼Ê¦ÇÀµ¥Ê±¼ä
+     * è·å¾—å¯¼å¸ˆæŠ¢å•æ—¶é—´
+     * @return grabTime å¯¼å¸ˆæŠ¢å•æ—¶é—´
      */
     public Date getGrabTime() {
         return grabTime;
     }
     /**
-     * ÉèÖÃÇÀµ¥Ê±¼ä
-     * @param grabTime ÇÀµ¥Ê±¼ä
+     * è®¾ç½®æŠ¢å•æ—¶é—´
+     * @param grabTime æŠ¢å•æ—¶é—´
      */
     public void setGrabTime(Date grabTime) {
         this.grabTime = grabTime;
     }
     /**
-     * »î¶¯¾Ù°ìÊ±¼ä
+     * æ´»åŠ¨ä¸¾åŠæ—¶é—´
      * @return holdTime
      */
     public Date getHoldTime() {
         return holdTime;
     }
     /**
-     * ÉèÖÃ¾Ù°ìÊ±¼ä
-     * @param holdTime ¾Ù°ìÊ±¼ä
+     * è®¾ç½®ä¸¾åŠæ—¶é—´
+     * @param holdTime ä¸¾åŠæ—¶é—´
      */
     public void setHoldTime(Date holdTime) {
         this.holdTime = holdTime;
     }
     /**
-     * ·µ»Ø»î¶¯id
-     * @return id »î¶¯id
+     * è¿”å›æ´»åŠ¨id
+     * @return id æ´»åŠ¨id
      */
     public int getId() {
         return id;
     }
     /**
-     * ÉèÖÃ»î¶¯id
-     * @param id »î¶¯id
+     * è®¾ç½®æ´»åŠ¨id
+     * @param id æ´»åŠ¨id
      */
     public void setId(int id) {
         this.id = id;
     }
     /**
-     * ÊÇ·ñ¿ÉÒÔ±¨Ãû
+     * æ˜¯å¦å¯ä»¥æŠ¥å
      * @return isApply
      */
     public boolean isApply() {
         return isApply;
     }
     /**
-     * ÉèÖÃ»î¶¯¿É·ñ±¨Ãû
-     * @param apply ¿É·ñ±¨Ãû±êÖ¾
+     * è®¾ç½®æ´»åŠ¨å¯å¦æŠ¥å
+     * @param apply å¯å¦æŠ¥åæ ‡å¿—
      */
     public void setApply(boolean apply) {
         isApply = apply;
     }
     /**
-     * »ñµÃµ¼Ê¦id
-     * @return lid µ¼Ê¦id
+     * è·å¾—å¯¼å¸ˆid
+     * @return lid å¯¼å¸ˆid
      */
     public int getLid() {
         return lid;
     }
     /**
-     * ÉèÖÃµ¼Ê¦id
-     * @param lid µ¼Ê¦id
+     * è®¾ç½®å¯¼å¸ˆid
+     * @param lid å¯¼å¸ˆid
      */
     public void setLid(int lid) {
         this.lid = lid;
     }
     /**
-     * »ñµÃ»î¶¯ÈËÊıÏŞÖÆ
-     * @return limits ÈËÊıÏŞÖÆ
+     * è·å¾—æ´»åŠ¨äººæ•°é™åˆ¶
+     * @return limits äººæ•°é™åˆ¶
      */
     public int getLimits() {
         return limits;
     }
     /**
-     * ÉèÖÃ»î¶¯ÈËÊıÉÏÏŞ
+     * è®¾ç½®æ´»åŠ¨äººæ•°ä¸Šé™
      * @param limits
      */
     public void setLimits(int limits) {
         this.limits = limits;
     }
     /**
-     * »ñµÃµ¼Ê¦ĞÕÃû
-     * @return lname µ¼Ê¦ĞÕÃû
+     * è·å¾—å¯¼å¸ˆå§“å
+     * @return lname å¯¼å¸ˆå§“å
      */
     public String getLname() {
         return lname;
     }
     /**
-     * ÉèÖÃµ¼Ê¦ĞÕÃû
-     * @param lname µ¼Ê¦ĞÕÃû
+     * è®¾ç½®å¯¼å¸ˆå§“å
+     * @param lname å¯¼å¸ˆå§“å
      */
     public void setLname(String lname) {
         this.lname = lname;
     }
     /**
-     * »ñµÃ»î¶¯Ãû³Æ
-     * @return name »î¶¯Ãû³Æ
+     * è·å¾—æ´»åŠ¨åç§°
+     * @return name æ´»åŠ¨åç§°
      */
     public String getName() {
         return name;
     }
     /**
-     * ÉèÖÃ»î¶¯Ãû³Æ
-     * @param name »î¶¯Ãû³Æ
+     * è®¾ç½®æ´»åŠ¨åç§°
+     * @param name æ´»åŠ¨åç§°
      */
     public void setName(String name) {
         this.name = name;
     }
     /**
-     * »ñµÃ»î¶¯×éÖ¯Õßid
-     * @return oid ×éÖ¯Õßid
+     * è·å¾—æ´»åŠ¨ç»„ç»‡è€…id
+     * @return oid ç»„ç»‡è€…id
      */
     public int getOid() {
         return oid;
     }
     /**
-     * ÉèÖÃ»î¶¯×éÖ¯Õßid
-     * @param oid »î¶¯×éÖ¯Õßid
+     * è®¾ç½®æ´»åŠ¨ç»„ç»‡è€…id
+     * @param oid æ´»åŠ¨ç»„ç»‡è€…id
      */
     public void setOid(int oid) {
         this.oid = oid;
     }
     /**
-     * »ñµÃ»î¶¯×éÖ¯ÕßĞÕÃû
-     * @return oname »î¶¯×éÖ¯ÕßĞÕÃû
+     * è·å¾—æ´»åŠ¨ç»„ç»‡è€…å§“å
+     * @return oname æ´»åŠ¨ç»„ç»‡è€…å§“å
      */
     public String getOname() {
         return oname;
     }
     /**
-     * ÉèÖÃ»î¶¯×éÖ¯ÕßĞÕÃû
-     * @param oname »î¶¯×éÖ¯ÕßĞÕÃû
+     * è®¾ç½®æ´»åŠ¨ç»„ç»‡è€…å§“å
+     * @param oname æ´»åŠ¨ç»„ç»‡è€…å§“å
      */
     public void setOname(String oname) {
         this.oname = oname;
     }
     /**
-     * »ñµÃ»î¶¯·¢²¼Ê±¼ä
-     * @return pubTime »î¶¯·¢²¼Ê±¼ä
+     * è·å¾—æ´»åŠ¨å‘å¸ƒæ—¶é—´
+     * @return pubTime æ´»åŠ¨å‘å¸ƒæ—¶é—´
      */
     public Date getPubTime() {
         return pubTime;
     }
     /**
-     * ÉèÖÃ»î¶¯·¢²¼Ê±¼ä
-     * @param pubTime »î¶¯·¢²¼Ê±¼ä
+     * è®¾ç½®æ´»åŠ¨å‘å¸ƒæ—¶é—´
+     * @param pubTime æ´»åŠ¨å‘å¸ƒæ—¶é—´
      */
     public void setPubTime(Date pubTime) {
         this.pubTime = pubTime;
